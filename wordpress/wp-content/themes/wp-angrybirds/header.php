@@ -21,27 +21,31 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!-- wrapper -->
-<div class="wrapper">
-  <header role="banner">
-    <div class="inner">
 
-      <div class="logo">
-        <?php if ( !is_front_page() && !is_home() ){ ?>
-          <a href="<?php echo home_url(); ?>">
-        <?php } ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php wp_title( '' ); ?>" title="<?php wp_title( '' ); ?>" class="logo-img">
-        <?php if ( !is_front_page() && !is_home() ){ ?>
-          </a>
-        <?php } ?>
-      </div><!-- /logo -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="http://game-angrybirds.ru/" rel="nofollow" class="navbar-brand">
+          <img alt="Angry Birds / Энгри Бердз играть онлайн" src="img/logo.png" width="32" heigh="32" class="" style="float: left; margin-right: 15px;"> Игры Angry Birds </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul id="menu-main" class="nav navbar-nav navbar-right">
+          <li id="menu-item-374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-374"><a href="http://game-angrybirds.ru/">Играть</a></li>
+          <li id="menu-item-375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-375"><a href="http://game-angrybirds.ru/category/skachat-games">Скачать</a></li>
+          <li id="menu-item-382" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-382"><a href="http://game-angrybirds.ru/category/video">Смотреть</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!--Content-->
 
-      <nav class="nav" role="navigation">
-        <?php wpeHeadNav(); ?>
-      </nav><!-- /nav -->
-
-    </div><!-- /.inner -->
-  </header><!-- /header -->
-
-  <section role="main">
-    <div class="inner">
