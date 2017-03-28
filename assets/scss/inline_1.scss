@@ -1,0 +1,29 @@
+.kk-star-ratings {
+  width: 120px;
+
+  .kksr-stars {
+    a {
+      width: 24px;
+    }
+
+    height: 24px;
+
+    .kksr-fuel, a {
+      height: 24px;
+    }
+  }
+
+  .kksr-star {
+    &.gray {
+      background-image: url(http://game-angrybirds.ru/wp-content/plugins/kk-star-ratings/gray.png);
+    }
+
+    &.yellow {
+      background-image: url(http://game-angrybirds.ru/wp-content/plugins/kk-star-ratings/yellow.png);
+    }
+
+    &.orange {
+      background-image: url(http://game-angrybirds.ru/wp-content/plugins/kk-star-ratings/orange.png);
+    }
+  }
+}

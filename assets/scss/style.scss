@@ -5,8 +5,6 @@ Description: Angry Birds
 Version: 1.0.0
 */
 
-body {}
-
 .s37-fade {
   display: none;
 }
@@ -15,8 +13,13 @@ body {}
   width: 100%;
   max-width: 100%;
   height: auto;
-}
 
+  &.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 /*
 @media (min-width: 992px) {
@@ -26,14 +29,8 @@ body {}
         height: auto;
         margin-left: -100px;
     }
-    
-}*/
 
-.s37-post-single img.aligncenter {
-  clear: both;
-  display: block;
-  margin: 0 auto;
-}
+}*/
 
 img {
   -webkit-border-radius: 4px;
@@ -68,6 +65,7 @@ img {
     float: left !important;
     margin-right: 10px;
   }
+
   .date-left {
     float: left !important;
     margin-right: 20px;
@@ -83,33 +81,34 @@ img {
 
 .s37-thumbnail {
   position: relative;
-}
 
-.s37-thumbnail .s37-caption {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  color: #fff;
-  padding: 20px 20px 0px 20px;
-  /* background-color: rgba(0,0,0,.3); */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
-  background: -o-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
-  background: linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
-}
+  .s37-caption {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 20px 20px 0px 20px;
 
-.s37-thumbnail .s37-caption a {
-  color: #fff;
+    /* background-color: rgba(0,0,0,.3); */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+
+    a {
+      color: #fff;
+    }
+  }
 }
 
 td.text-right {
@@ -136,46 +135,42 @@ td.text-right {
   border-top: 1px solid #eee;
 }
 
-
 /**
 * Social buttons
 */
 
-.btn-fb,
-.btn-fb:link,
-.btn-fb:hover,
-.btn-fb:active,
-.btn-fb:visited {
+.btn-fb {
   background-color: #3a569f;
+
+  &:link, &:hover, &:active, &:visited {
+    background-color: #3a569f;
+  }
+
+  &:hover, &:active {
+    opacity: 0.9;
+  }
 }
 
-.btn-fb:hover,
-.btn-fb:active {
-  opacity: 0.9;
-}
-
-.btn-tw,
-.btn-tw:link,
-.btn-tw:hover,
-.btn-tw:active,
-.btn-tw:visited {
+.btn-tw {
   background-color: #21aaf6;
+
+  &:link, &:hover, &:active, &:visited {
+    background-color: #21aaf6;
+  }
+
+  &:hover, &:active {
+    opacity: 0.9;
+  }
 }
 
-.btn-tw:hover,
-.btn-tw:active {
-  opacity: 0.9;
-}
-
-.btn-vk,
-.btn-vk:link,
-.btn-vk:hover,
-.btn-vk:active,
-.btn-vk:visited {
+.btn-vk {
   background-color: #4e74a7;
-}
 
-.btn-vk:hover,
-.btn-vk:active {
-  opacity: 0.9;
+  &:link, &:hover, &:active, &:visited {
+    background-color: #4e74a7;
+  }
+
+  &:hover, &:active {
+    opacity: 0.9;
+  }
 }
