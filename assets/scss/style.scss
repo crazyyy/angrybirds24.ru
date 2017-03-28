@@ -1,9 +1,4 @@
-/*
-Theme Name: AngryBirds
-Theme URI: http://game-angrybirds.ru/
-Description: Angry Birds
-Version: 1.0.0
-*/
+@import 'import/mixin';
 
 .s37-fade {
   display: none;
@@ -13,28 +8,16 @@ Version: 1.0.0
   width: 100%;
   max-width: 100%;
   height: auto;
-
   &.aligncenter {
-    clear: both;
     display: block;
+    clear: both;
+
     margin: 0 auto;
   }
 }
 
-/*
-@media (min-width: 992px) {
-    .s37-post-single img.alignnone {
-        float: center;
-        max-width: 866px;
-        height: auto;
-        margin-left: -100px;
-    }
-
-}*/
 
 img {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -48,8 +31,9 @@ img {
 }
 
 .caption-title a {
-  color: #333;
   text-decoration: none;
+
+  color: #333;
 }
 
 .pull-left {
@@ -63,48 +47,41 @@ img {
 @media (min-width: 300px) {
   .avatar-left {
     float: left !important;
+
     margin-right: 10px;
   }
 
   .date-left {
     float: left !important;
+
     margin-right: 20px;
   }
 }
 
 @media (max-width: 768px) {
   #comments-list ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .s37-thumbnail {
   position: relative;
-
   .s37-caption {
-    display: block;
     position: absolute;
-    left: 0;
     bottom: 0;
+    left: 0;
+
+    display: block;
+
+    box-sizing: border-box;
     width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    padding: 20px 20px 0 20px;
+
     color: #fff;
-    padding: 20px 20px 0px 20px;
+    border-radius: 4px;
 
-    /* background-color: rgba(0,0,0,.3); */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-
+    @include linear-gradient(top left, white, #a6f2c0 30%, rgba(180, 200, 210, .9), black);
     a {
       color: #fff;
     }
@@ -117,21 +94,25 @@ td.text-right {
 
 .footer {
   width: 100%;
-  background-color: #424242;
-  padding: 20px 0px 0px 0px;
   margin-top: 20px;
+  padding: 20px 0 0 0;
+
+  background-color: #424242;
 }
 
 .rambler_counter {
   display: none;
-  width: 0px;
-  height: 0px;
-  border: 0px;
+
+  width: 0;
+  height: 0;
+
+  border: 0;
 }
 
 .meta-date-com {
-  padding-top: 10px;
   margin-top: 30px;
+  padding-top: 10px;
+
   border-top: 1px solid #eee;
 }
 
@@ -141,36 +122,42 @@ td.text-right {
 
 .btn-fb {
   background-color: #3a569f;
-
-  &:link, &:hover, &:active, &:visited {
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
     background-color: #3a569f;
   }
-
-  &:hover, &:active {
-    opacity: 0.9;
+  &:hover,
+  &:active {
+    opacity: .9;
   }
 }
 
 .btn-tw {
   background-color: #21aaf6;
-
-  &:link, &:hover, &:active, &:visited {
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
     background-color: #21aaf6;
   }
-
-  &:hover, &:active {
-    opacity: 0.9;
+  &:hover,
+  &:active {
+    opacity: .9;
   }
 }
 
 .btn-vk {
   background-color: #4e74a7;
-
-  &:link, &:hover, &:active, &:visited {
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
     background-color: #4e74a7;
   }
-
-  &:hover, &:active {
-    opacity: 0.9;
+  &:hover,
+  &:active {
+    opacity: .9;
   }
 }

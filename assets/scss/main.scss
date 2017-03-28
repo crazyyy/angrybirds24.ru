@@ -1,0 +1,292 @@
+@import 'bootstrap.min';
+@import 'import/mixin';
+
+img {
+  &.wp-smiley,
+  &.emoji {
+    display: inline !important;
+
+    width: 1em !important;
+    height: 1em !important;
+    margin: 0 .07em !important;
+    padding: 0 !important;
+
+    vertical-align: -.1em !important;
+
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+.kk-star-ratings {
+  width: 120px;
+  min-height: 48px;
+  &.top-left,
+  &.top-right {
+    margin-top: 3px;
+  }
+  &.lft {
+    float: left;
+
+    margin-right: 10px;
+  }
+  &.rgt {
+    float: right;
+
+    margin-left: 10px;
+  }
+  .kksr-stars {
+    position: relative;
+
+    height: 24px;
+  }
+  .kksr-star {
+    background-position: 0 0;
+    &.gray {
+      background-image: url(../img/gray.png);
+    }
+    &.yellow {
+      background-image: url(../img/yellow.png);
+    }
+    &.orange {
+      background-image: url(../img/orange.png);
+    }
+  }
+  .kksr-stars {
+    .kksr-fuel {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+
+      height: 24px;
+    }
+    a {
+      position: relative;
+      z-index: 1;
+
+      float: left;
+
+      width: 24px;
+      height: 24px;
+
+      text-decoration: none;
+
+      border: 0;
+      &:focus {
+        text-decoration: none;
+
+        border: 0;
+        outline: none;
+      }
+    }
+  }
+  .kksr-legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    padding: 3px;
+
+    text-align: center;
+
+    color: #999;
+    .kksr-title {
+      display: none;
+    }
+  }
+  .kksr-stars {
+    background-color: transparent !important;
+    .kksr-fuel,
+    a {
+      background-color: transparent !important;
+    }
+  }
+}
+
+
+.s37-fade {
+  display: none;
+}
+
+.s37-post-single img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  &.aligncenter {
+    display: block;
+    clear: both;
+
+    margin: 0 auto;
+  }
+}
+
+
+img {
+  border-radius: 4px;
+}
+
+.col {
+  padding-bottom: 15px;
+}
+
+.s37-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.caption-title a {
+  text-decoration: none;
+
+  color: #333;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+@media (min-width: 300px) {
+  .avatar-left {
+    float: left !important;
+
+    margin-right: 10px;
+  }
+
+  .date-left {
+    float: left !important;
+
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #comments-list ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.s37-thumbnail {
+  position: relative;
+  .s37-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+
+    color: #fff;
+    border-radius: 4px;
+
+    @include linear-gradient(top left, white, #a6f2c0 30%, rgba(180, 200, 210, .9), black);
+    a {
+      color: #fff;
+    }
+  }
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0 0 0;
+
+  background-color: #424242;
+}
+
+.rambler_counter {
+  display: none;
+
+  width: 0;
+  height: 0;
+
+  border: 0;
+}
+
+.meta-date-com {
+  margin-top: 30px;
+  padding-top: 10px;
+
+  border-top: 1px solid #eee;
+}
+
+/**
+* Social buttons
+*/
+
+.btn-fb {
+  background-color: #3a569f;
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    background-color: #3a569f;
+  }
+  &:hover,
+  &:active {
+    opacity: .9;
+  }
+}
+
+.btn-tw {
+  background-color: #21aaf6;
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    background-color: #21aaf6;
+  }
+  &:hover,
+  &:active {
+    opacity: .9;
+  }
+}
+
+.btn-vk {
+  background-color: #4e74a7;
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    background-color: #4e74a7;
+  }
+  &:hover,
+  &:active {
+    opacity: .9;
+  }
+}
+.kk-star-ratings {
+  width: 120px;
+  .kksr-stars {
+    height: 24px;
+    a {
+      width: 24px;
+    }
+    .kksr-fuel,
+    a {
+      height: 24px;
+    }
+  }
+  .kksr-star {
+    &.gray {
+      background-image: url(../img/gray.png);
+    }
+    &.yellow {
+      background-image: url(../img/yellow.png);
+    }
+    &.orange {
+      background-image: url(../img/orange.png);
+    }
+  }
+}
