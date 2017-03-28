@@ -1,0 +1,181 @@
+/*
+Theme Name: AngryBirds
+Theme URI: http://game-angrybirds.ru/
+Description: Angry Birds
+Version: 1.0.0
+*/
+
+body {}
+
+.s37-fade {
+  display: none;
+}
+
+.s37-post-single img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*
+@media (min-width: 992px) {
+    .s37-post-single img.alignnone {
+        float: center;
+        max-width: 866px;
+        height: auto;
+        margin-left: -100px;
+    }
+    
+}*/
+
+.s37-post-single img.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.col {
+  padding-bottom: 15px;
+}
+
+.s37-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.caption-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+@media (min-width: 300px) {
+  .avatar-left {
+    float: left !important;
+    margin-right: 10px;
+  }
+  .date-left {
+    float: left !important;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #comments-list ul {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.s37-thumbnail {
+  position: relative;
+}
+
+.s37-thumbnail .s37-caption {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px 20px 0px 20px;
+  /* background-color: rgba(0,0,0,.3); */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
+  background: linear-gradient(top, rgba(0, 0, 0, .0), rgba(0, 0, 0, .9));
+}
+
+.s37-thumbnail .s37-caption a {
+  color: #fff;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.footer {
+  width: 100%;
+  background-color: #424242;
+  padding: 20px 0px 0px 0px;
+  margin-top: 20px;
+}
+
+.rambler_counter {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border: 0px;
+}
+
+.meta-date-com {
+  padding-top: 10px;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+
+/**
+* Social buttons
+*/
+
+.btn-fb,
+.btn-fb:link,
+.btn-fb:hover,
+.btn-fb:active,
+.btn-fb:visited {
+  background-color: #3a569f;
+}
+
+.btn-fb:hover,
+.btn-fb:active {
+  opacity: 0.9;
+}
+
+.btn-tw,
+.btn-tw:link,
+.btn-tw:hover,
+.btn-tw:active,
+.btn-tw:visited {
+  background-color: #21aaf6;
+}
+
+.btn-tw:hover,
+.btn-tw:active {
+  opacity: 0.9;
+}
+
+.btn-vk,
+.btn-vk:link,
+.btn-vk:hover,
+.btn-vk:active,
+.btn-vk:visited {
+  background-color: #4e74a7;
+}
+
+.btn-vk:hover,
+.btn-vk:active {
+  opacity: 0.9;
+}
