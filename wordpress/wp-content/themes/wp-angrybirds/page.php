@@ -1,18 +1,35 @@
 <?php get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+        <article class="s37-post-single">
+          <hr>
+          <h1 class="text-center"><?php the_title(); ?></h1>
+          <hr>
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+            <?php the_content(); ?>
+
+          <hr>
+
+          <div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>
+          <div class="meta-date-com">
+            <div class="pull-left"></div>
+            <div style="clear: both;"></div>
+          </div>
+
+          <?php endwhile; endif; ?>
+          <?php comments_template(); ?>
+
+        </article>
+      </div>
+
+      <?php get_sidebar(); ?>
+    </div>
+    <?php get_template_part('related'); ?>
+  </div>
+
 <?php get_footer(); ?>

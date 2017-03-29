@@ -113,7 +113,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'items_wrap'      => '<ul id="menu-main" class="nav navbar-nav navbar-right">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -181,8 +181,8 @@ if (function_exists('register_sidebar')) {
     'name' => __('Блок виджетов #1', 'wpeasy'),
     'description' => __('Description for this widget-area...', 'wpeasy'),
     'id' => 'widgetarea1',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget' => '</div>',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
     'before_title' => '<h6>',
     'after_title' => '</h6>'
   ));
