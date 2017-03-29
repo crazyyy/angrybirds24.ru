@@ -1,18 +1,26 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+  <div class="container">
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
+    <div class="scroll">
+      <div class="jscroll-inner">
+        <div class="row">
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+          <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 10, 'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1), ); query_posts($args); ?>
+          <?php get_template_part('loop'); ?>
+        </div>
+        <?php get_template_part('pagination'); ?>
+        <?php wp_reset_query(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <?php the_content(); ?>
+          <?php edit_post_link(); ?>
+        </article>
+      </div>
+    </div>
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+  </div>
+
+  <?php endwhile; endif; ?>
+
 <?php get_footer(); ?>

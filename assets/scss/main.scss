@@ -1,5 +1,6 @@
 @import 'bootstrap.min';
 @import 'import/mixin';
+$red: #cc181e;
 
 img {
   &.wp-smiley,
@@ -291,8 +292,38 @@ td.text-right {
   }
 }
 #related {
-  .related-loop{
-    height: 400px;
+  .related-loop {
     overflow: hidden;
+
+    height: 400px;
+  }
+}
+.loopers-img {
+  img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.pagination {
+  width: 100%;
+
+  text-align: center;
+  span,
+  a {
+    display: inline-block;
+
+    margin: 0 3px;
+    padding: 3px 5px;
+
+    border: 1px solid $red;
+    border-radius: 4px;
+    &.prev, &.next,
+    &.current,
+    &.dots {
+      border-color: transparent;
+    }
   }
 }

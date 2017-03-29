@@ -11,7 +11,7 @@
       <h1 class="widget-title">Другие игры</h1>
       <div class="textwidget">
 
-        <?php query_posts("showposts=12"); ?>
+        <?php query_posts("showposts=2"); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <p>
               <a href="<?php the_permalink(); ?>">

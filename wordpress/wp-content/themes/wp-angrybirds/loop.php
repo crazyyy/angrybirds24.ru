@@ -1,29 +1,22 @@
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-  <div id="post-<?php the_ID(); ?>" <?php post_class('looper'); ?>>
+<?php $i = 1; if (have_posts()): while (have_posts()) : the_post(); ?>
 
-    <a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+  <div class="col-md-3 col-sm-4 col loopers">
+    <p>
+      <a class="loopers-img" href="<?php the_permalink(); ?>">
       <?php if ( has_post_thumbnail()) :
         the_post_thumbnail('medium');
       else: ?>
         <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
       <?php endif; ?>
-    </a><!-- /post thumbnail -->
+      </a>
+    </p>
+    <p class="text-center"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></p>
+  </div>
 
-    <h2 class="inner-title">
-      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-    </h2><!-- /post title -->
+  <?php if ( $i == 3 || $i == 6 || $i == 9 || $i == 12 || $i == 15 || $i == 18 || $i == 21 || $i == 24) { ?>
+    <div class="clearfix visible-sm-block"></div>
+  <?php } else if ( $i == 4 || $i == 8 || $i == 12 || $i == 16 || $i == 20 || $i == 28 ){ ?>
+    <div class="clearfix visible-md-block visible-lg-block"></div>
+  <?php } ?>
 
-    <span class="date"><?php the_time('j F Y'); ?> <span><?php the_time('G:i'); ?></span></span>
-    <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-    <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
-
-    <?php wpeExcerpt('wpeExcerpt40'); ?>
-
-  </div><!-- /looper -->
-  <?php endwhile; else: ?>
-  <div>
-
-    <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-
-  </div><!-- /article -->
-<?php endif; ?>
+<?php $i++; endwhile; endif; ?>
