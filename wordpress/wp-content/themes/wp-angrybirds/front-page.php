@@ -10,7 +10,7 @@
           <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 8, 'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1), ); query_posts($args); ?>
           <?php get_template_part('loop'); ?>
         </div>
-        <?php get_template_part('pagination'); ?>
+
         <?php wp_reset_query(); ?>
       </div>
     </div>
